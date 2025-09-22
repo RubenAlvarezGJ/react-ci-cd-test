@@ -82,11 +82,11 @@ jobs:
           stockFishURL: '${{ secrets.STOCKFISH_URL }}',\n\
           chessServer: '${{ secrets.CHESS_SERVER }}',\n\
           },\n\
-          };" > src/environments/environment.prod.js
+          };" > src/environments/environment.js
         working-directory: ./react-ystemandchess
 
       - name: Build react-ystemandchess
-        run: npm run build --if-present
+        run: CI=false npm run build --if-present
         working-directory: ./react-ystemandchess
 
       - name: Test react-ystemandchess
