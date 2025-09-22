@@ -33,9 +33,8 @@
   },
   "scripts": {
     "lint": "standard js/chessboard-1.0.0.js",
-    "standard": "standard --fix lib/*.js website/js/*.js",
-    "website": "node scripts/website.js",
-    "build": "npm run lint"
+    "standard": "standard --fix js/*.js ./*.js",
+    "website": "node scripts/website.js"
   },
   "volta": {
     "node": "18.20.8"
