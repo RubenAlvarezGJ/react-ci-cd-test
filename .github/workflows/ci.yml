@@ -34,7 +34,7 @@ jobs:
         working-directory: ./chessClient
 
       - name: Lint chessClient
-        run: npm run lint || true
+        run: npm run lint
         working-directory: ./chessClient
 
       # chessServer
